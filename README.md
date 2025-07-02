@@ -1,8 +1,71 @@
-# React + Vite
+# InventarioPro 📦
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para la gestión de inventario, desarrollada con React, Vite, Supabase y otras tecnologías modernas. Permite registrar productos, movimientos de stock, usuarios y mucho más.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React + Vite
+- 🌐 React Router DOM
+- 🎨 Styled Components
+- 💬 Supabase (Auth + Base de datos)
+- ⚡ React Query
+- 📊 Recharts
+- 🧪 React Query Devtools
+
+## 📁 Estructura de carpetas
+
+src/
+├── components/
+├── context/
+├── hooks/
+├── pages/
+├── routers/
+├── store/
+├── supabase/
+├── styles/
+└── utils/
+
+
+
+## 🛠️ Instalación
+
+```bash
+# Cloná el repositorio
+git clone https://github.com/mariomarquesto/InventarioPro.git
+cd InventarioPro
+
+# Instalá dependencias
+npm install
+
+# Ejecutá el proyecto
+npm run dev
+
+
+
+Crea un archivo .env con tus credenciales de Supabase:
+
+VITE_SUPABASE_URL=https://tu-url.supabase.co
+VITE_SUPABASE_ANON_KEY=tu-clave-anon
+
+
+🔐 Autenticación
+
+Se utiliza Supabase Auth para registrar e iniciar sesión con email/password.
+📦 Funcionalidades
+
+Login de usuarios
+
+Panel de control por permisos
+
+Gestión de productos
+
+Registro de movimientos de entrada/salida
+
+Visualización de estadísticas y reportes
+
+    Soporte para temas (oscuro / claro)
+
+🧠 Estado global
+
+    Zustand + React Query para el manejo eficiente del estado y la cache.
+
